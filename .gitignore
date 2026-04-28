@@ -1,0 +1,16 @@
+#local terraform directories
+.terraform/*
+
+#tf states files that should not be made public
+*.tfstate
+*.tfstate.*
+
+# crash log files that should not be made public
+crash.log
+
+#Sensitive variable files that should not be made public
+*.tfvars
+*.tfvars.json
+
+#provider plugins that should not be made public
+.terraform.lock.hcl
