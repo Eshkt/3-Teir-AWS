@@ -35,3 +35,6 @@ resource "aws_security_group" "web_sg" {
 }
 
 #Export the security group id so that it can be used in other modules
+output "web_sg_id" {
+    value = aws_security_group.web_sg.id
+}
